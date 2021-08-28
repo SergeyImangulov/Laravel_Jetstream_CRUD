@@ -62,3 +62,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+##Functional
+
+Implemented with laravel. In this application, there is authorization, registration, validation (as far as authorization is concerned). The next functionality is the ability to add, edit, delete, change the status from "In Progress" to "Completed".
