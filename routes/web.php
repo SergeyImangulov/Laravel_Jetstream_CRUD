@@ -24,8 +24,11 @@ Route::get('/', function () {
 
 Route::get('/History', function () {
     $posts = App\Models\Posts::all();
-    return view('welcome', compact('posts'));
+    return view('History', compact('posts'));
 });
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+//Route::get('/', [TaskController::class, 'index'])->name('index');
+Route::resource('tasks', App\Http\Controllers\TaskController::class);
